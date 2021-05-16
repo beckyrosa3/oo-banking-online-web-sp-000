@@ -15,10 +15,8 @@ class Transfer
   end
 
   def execute_transaction
-
-    if @sender.balance < @amount && @status.valid? == false
-        "Transaction rejected. Please check your account balance."
-      #elsif @status ==
+    @receiver.deposit(amount)
+    status = "complete"
     end
   end
 end
