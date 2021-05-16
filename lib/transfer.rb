@@ -11,6 +11,6 @@ class Transfer
   end
 
   def valid?
-    self.status == "open" && self.balance > 0
+    BankAccount.status == "open" && BankAccount.balance > 0
   end
 end
