@@ -11,6 +11,6 @@ class Transfer
   end
 
   def valid?
-    @valid?
+    self.status == "open" && self.balance > 0
   end
 end
