@@ -11,6 +11,7 @@ class Transfer
   end
 
   def valid?
-    @status == "open" && @balance > 0
+    self.sender.valid?
+    self.receiver.valid?
   end
 end
