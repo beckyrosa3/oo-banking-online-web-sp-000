@@ -1,4 +1,4 @@
-class Transfer=50
+class Transfer
 
   attr_reader :sender, :receiver, :status, :amount
 
